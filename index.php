@@ -56,9 +56,9 @@ function ajax_send_otp(user_mail) {
 
             }
             else{
-                s_otp_btn.value = "Send OTP";
-                email_warn = "Please try Again !";
-                console.log("step two ke niche shanu");
+                // s_otp_btn.value = "Send OTP";
+                // email_warn = "Please try Again !";
+                // console.log("step two ke niche shanu");
                 step_two();
             }            
         }

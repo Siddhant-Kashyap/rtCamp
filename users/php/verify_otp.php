@@ -71,7 +71,7 @@ class verify_otp
         else{
             echo 'Invalid OTP';
         }
-        $this->db->close();
+        // $this->db->close();
     }
 
     public function __destruct()

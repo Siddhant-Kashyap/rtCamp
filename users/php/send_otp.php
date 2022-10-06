@@ -28,12 +28,15 @@ class send_otp
         ';
 
         echo $this->message;
-        if(mail($this->user_mail,'Email Subscription',$this->message,$this->config->header)){
-            echo 'OTP Sent Successfully';
-        }
-        else{
-            echo 'Please try Again';
-        }
+        mail($this->user_mail,'Email Subscription',$this->message,$this->config->header);
+        echo 'OTP Sent Successfully';
+        // {
+        //     echo 'OTP Sent Successfully';
+        // }
+        // else{
+        //     echo 'Please try Again';
+            
+        // }
     }
 
     public function __construct()
@@ -93,7 +96,7 @@ class send_otp
                 echo 'Please try Again';
             }
         }
-        $this->db->close();
+        // $this->db->close();
     }
 
     public function __destruct()

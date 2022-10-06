@@ -48,7 +48,7 @@ require_once __DIR__.'/database-connection.php';
                 }
             }
 
-            $this->db->close();
+            // $this->db->close();
         }
     }
 
